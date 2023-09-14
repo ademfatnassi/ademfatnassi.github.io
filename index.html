@@ -3,10 +3,35 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#322e7c" />
+    <meta
+      name="description"
+      content="Adem Fatnassi's personal website, Software Developer, MEAN Stack Developer"
+    />
+
+    <meta property="og:url" content="https://ademfatnassi.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Adem Fatnassi - Software Developer" />
+    <meta
+      property="og:description"
+      content="Adem Fatnassi's personal website, Software Developer, MEAN Stack Developer"
+    />
+    <meta property="og:image" content="assets/images/profile-image.webp" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="ademfatnassi.github.io" />
+    <meta property="twitter:url" content="https://ademfatnassi.github.io/" />
+    <meta name="twitter:title" content="Adem Fatnassi - Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Adem Fatnassi's personal website, Software Developer, MEAN Stack Developer"
+    />
+    <meta name="twitter:image" content="assets/images/profile-image.webp" />
     <!-- Google Fots -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -45,7 +70,7 @@
       sizes="16x16"
       href="assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
 
     <title>Adem Fatnassi - Software Developer</title>
   </head>
@@ -60,7 +85,10 @@
           <!-- social -->
           <ul class="ds-social">
             <li>
-              <a href="https://github.com/ademfatnassi" target="_blank"
+              <a
+                href="https://github.com/ademfatnassi"
+                target="_blank"
+                name="github link"
                 ><i class="ri-github-fill"></i
               ></a>
             </li>
@@ -68,6 +96,7 @@
               <a
                 href="https://www.linkedin.com/in/adem-fatnassi/"
                 target="_blank"
+                name="linkedin link"
                 ><i class="ri-linkedin-fill"></i
               ></a>
             </li>
@@ -83,7 +112,12 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <figure>
-              <img src="assets/images/profile-image.png" />
+              <img
+                src="assets/images/profile-image.webp"
+                alt="my profile image"
+                width="1024"
+                height="1024"
+              />
             </figure>
           </div>
           <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
@@ -264,7 +298,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">Mizy</h3>
-                  <h6>E-bidding</h6>
+                  <h4 class="h6">E-bidding</h4>
                   <p>
                     A dynamic e-bidding platform designed for real-time
                     auctions, providing users with an efficient bidding
@@ -296,7 +330,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex align-items-end"
               >
-                <figure><img src="assets/images/work-mizy.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-mizy.webp"
+                    alt="showcase mizy project, auction website"
+                    width="940"
+                    height="788"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -307,7 +349,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">Bonjour</h3>
-                  <h6>Internal chat</h6>
+                  <h4 class="h6">Internal chat</h4>
                   <ul>
                     <li>
                       Develop a complete user interface for an internal chat
@@ -347,7 +389,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex align-items-end"
               >
-                <figure><img src="assets/images/work-bnjr.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-bnjr.webp"
+                    alt="showcase bonjour project, internal chat app"
+                    width="940"
+                    height="788"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -358,7 +408,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">Dendromap</h3>
-                  <h6>Agriculture solution</h6>
+                  <h4 class="h6">Agriculture solution</h4>
                   <ul>
                     <li>
                       Maintain and improve the platform by addressing and fixing
@@ -379,7 +429,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
               >
-                <figure><img src="assets/images/work-dndr.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-dndr.webp"
+                    alt="showcase dendromap project, agriculture solution"
+                    width="940"
+                    height="788"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -391,7 +449,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">Lys</h3>
-                  <h6>E-wedding Planner</h6>
+                  <h4 class="h6">E-wedding Planner</h4>
                   <ul>
                     <li>
                       Create an intuitive and responsive user interface for
@@ -414,7 +472,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
               >
-                <figure><img src="assets/images/work-lys.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-lys.webp"
+                    alt="showcase lys project, e-wedding planner website"
+                    width="1080"
+                    height="1080"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -425,7 +491,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">AFCE</h3>
-                  <h6>E-learning</h6>
+                  <h4 class="h6">E-learning</h4>
                   <ul>
                     <li>
                       Create an appealing and user-friendly user interface
@@ -449,7 +515,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
               >
-                <figure><img src="assets/images/work-afce.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-afce.webp"
+                    alt="showcase afce project, e-learning platform"
+                    width="1080"
+                    height="1080"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -460,7 +534,7 @@
               >
                 <section class="pe-4">
                   <h3 class="ds-work-tilte mb-2">EDI Dashboard</h3>
-                  <h6>ERP, management</h6>
+                  <h4 class="h6">ERP, management</h4>
                   <ul>
                     <li>Develop a computerized data exchange application</li>
                     <li>Incorporate EBP management software</li>
@@ -482,7 +556,15 @@
               <div
                 class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5"
               >
-                <figure><img src="assets/images/work-ebp.png" /></figure>
+                <figure>
+                  <img
+                    src="assets/images/work-ebp.webp"
+                    alt="showcase ebp dashboard application, ERP, management project"
+                    width="1080"
+                    height="1080"
+                    loading="lazy"
+                  />
+                </figure>
               </div>
             </div>
           </div>
@@ -496,7 +578,7 @@
       <div class="container">
         <section>
           <span>Stay in touch</span>
-          <h4>Ready to talk?</h4>
+          <h4 class="h6">Ready to talk?</h4>
           <p>Feel free to contact me</p>
           <a
             href="mailto:fatnassiadem99+portfolioContact@gmail.com"
@@ -520,11 +602,12 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js", { scope: "./" });
+      }
+    </script>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>
