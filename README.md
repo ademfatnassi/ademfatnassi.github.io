@@ -12,4 +12,5 @@ This repository contains the source code for my personal portfolio website. It's
 - HTML5
 - CSS3
 - JavaScript
+- Bootstrap
 
