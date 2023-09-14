@@ -64,8 +64,8 @@ svg,img { max-width: 100%; height: auto; }
 .ds-heading{ display: inline-block; font-weight: 700; color: #000; text-transform: uppercase; letter-spacing: 1px; font-size: 16px; border-bottom: 3px solid #322e7c; padding-bottom: 7px; margin-bottom: 23px; }
 .ds-about-section p{ color: #373737; font-size: 24px; line-height: 40px; font-weight: 300; margin-bottom: 60px; }
 
-.ds-button{ display: inline-block; text-transform: uppercase;font-size: 12px;line-height: 13px;font-weight: 600;letter-spacing: 3px; color:#322e7c; padding:17px 30px;  border: 2px solid #322e7c;border-radius: 60px; }
-.ds-button:hover{ background-color:#322e7c ; color: #FFF; }
+.ds-button{ display: inline-block; text-transform: uppercase;font-size: 12px;line-height: 13px;font-weight: 600;letter-spacing: 3px; color:#F3B4C0; padding:17px 30px;  border: 2px solid #F3B4C0;border-radius: 60px; }
+.ds-button:hover{ background-color:#F3B4C0 ; color: #000; }
 .ds-arrow-button i{ display: inline-block; vertical-align: middle; }
 /*-----------------------------------------------------------------
   4. >>> Skills Style
