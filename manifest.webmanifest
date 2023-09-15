@@ -1,32 +1,42 @@
 {
     "theme_color": "#322e7c",
-    "background_color": "#322e7c",
+    "background_color": "#fff",
     "display": "standalone",
-    "scope": "/",
+    "scope": "",
     "start_url": "/",
-    "name": "Adem Fatnassi - Software Developer",
+    "name": "Adem Fatnassi - Personal website",
     "short_name": "Adem Fatnassi",
     "description": "Adem Fatnassi's personal website, Software Developer, MEAN Stack Developer",
     "icons": [
         {
             "src": "/icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
             "src": "/icon-256x256.png",
             "sizes": "256x256",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
             "src": "/icon-384x384.png",
             "sizes": "384x384",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
             "src": "/icon-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/maskable_icon.png",
+            "sizes": "1024/1024",
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ]
 }

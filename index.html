@@ -160,7 +160,7 @@
             <a
               href="./assets/documents/resume.pdf"
               target="_blank"
-              class="ds-button"
+              class="ds-button ds-button-about"
               >Download Resume</a
             >
           </div>
@@ -603,9 +603,7 @@
     ></script>
 
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js", { scope: "./" });
-      }
+      navigator.serviceWorker.register("./sw.js").then();
     </script>
 
     <script src="assets/js/main.js"></script>
