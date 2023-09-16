@@ -69,6 +69,18 @@ svg,img { max-width: 100%; height: auto; }
 .ds-button:hover{ background-color:#F3B4C0 ; color: #000; }
 .ds-button-about:hover{ background-color:#322e7c ; color: #fff; }
 .ds-arrow-button i{ display: inline-block; vertical-align: middle; }
+.wave{ animation-name: wave-animation; animation-duration: 2.5s;animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;
+}
+@keyframes wave-animation {
+	0% {transform: rotate(0);}
+	10% {transform: rotate(14deg);}
+	20% {transform: rotate(-8deg);}
+	30% {transform: rotate(14deg);}
+	40% {transform: rotate(-4deg);}
+	50% {transform: rotate(10deg);}
+	60% {transform: rotate(0);}
+	to {transform: rotate(0);}
+	}
 /*-----------------------------------------------------------------
   4. >>> Skills Style
 ----------------------------------------------------------------*/
@@ -174,3 +186,4 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 
 
 }
+
