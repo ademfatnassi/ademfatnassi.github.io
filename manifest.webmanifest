@@ -1,7 +1,7 @@
 {
     "theme_color": "#322e7c",
     "background_color": "#fff",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "/index.html",
     "name": "Adem Fatnassi - Personal website",
