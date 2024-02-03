@@ -806,7 +806,11 @@
     ></script>
 
     <script>
-      navigator.serviceWorker.register("./sw.js").then();
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").then();
+        });
+      }
     </script>
 
     <script src="assets/js/main.js"></script>
