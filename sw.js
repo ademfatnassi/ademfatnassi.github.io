@@ -85,14 +85,31 @@ self.addEventListener("fetch", (event) => {
   // Skip cross-origin requests, like those for Google Analytics.
   if (!event.request.url.startsWith(self.location.origin)) return;
 
-  e.respondWith(
+  event.respondWith(
     (async () => {
-      const r = await caches.match(e.request);
-      if (r) return r;
-      const response = await fetch(e.request);
-      const cache = await caches.open(cacheName);
-      cache.put(e.request, response.clone());
-      return response;
+      const cache = await caches.open(PRECACHE);
+      const cachedResponse = await cache.match(event.request);
+
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+
+      try {
+        const response = await fetch(event.request);
+        // Check if we received a valid response
+        if (!response || response.status !== 200 || response.type !== "basic") {
+          return response;
+        }
+
+        // Clone the response as the fetch operation consumes the response stream
+        const responseToCache = response.clone();
+        cache.put(event.request, responseToCache);
+        return response;
+      } catch (error) {
+        // Handle exceptions (e.g., network issues)
+        console.error("Fetch failed; returning cached response.", error);
+        return cachedResponse;
+      }
     })()
   );
 });
