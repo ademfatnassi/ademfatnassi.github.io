@@ -2,8 +2,8 @@
     "theme_color": "#322e7c",
     "background_color": "#fff",
     "display": "standalone",
-    "scope": "",
-    "start_url": "/",
+    "scope": "/",
+    "start_url": "/index.html",
     "name": "Adem Fatnassi - Personal website",
     "short_name": "Adem Fatnassi",
     "description": "I'm a Software Developer from Tunisia. I create user-friendly applications and tackle complex challenges.",
@@ -35,7 +35,7 @@
         },
         {
             "src": "/maskable_icon.png",
-            "sizes": "1024/1024",
+            "sizes": "1024x1024",
             "type": "image/png",
             "purpose": "any maskable"
         }
