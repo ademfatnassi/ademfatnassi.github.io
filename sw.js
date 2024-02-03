@@ -22,16 +22,28 @@ const PRECACHE_URLS = [
   "index.html",
   "./", // Alias for index.html
   "./assets/css/main.css",
-  "./assets/",
+  "assets/documents/resume.pdf",
+  "./assets/js/main.js",
+  "./assets/images/profile-image.webp",
+  "./assets/images/work-afce.webp",
+  "./assets/images/work-CllgChat.webp",
+  "./assets/images/work-ebp.webp",
+  "./assets/images/work-lys.webp",
+  "./assets/images/work-mizy.webp",
+  "./icon-192x192.png",
+  "./icon-256x256.png",
+  "./icon-384x384.png",
+  "./icon-512x512.png",
+  "./maskable_icon.png",
 ];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches
-      .open(PRECACHE)
-      .then((cache) => cache.addAll(PRECACHE_URLS))
-      .then(self.skipWaiting())
+    (async () => {
+      const cache = await caches.open(PRECACHE);
+      await cache.addAll(PRECACHE_URLS);
+    })()
   );
 });
 
@@ -61,23 +73,26 @@ self.addEventListener("activate", (event) => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener("fetch", (event) => {
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request).then((cachedResponse) => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-
-        return caches.open(RUNTIME).then((cache) => {
-          return fetch(event.request).then((response) => {
-            // Put a copy of the response in the runtime cache.
-            return cache.put(event.request, response.clone()).then(() => {
-              return response;
-            });
-          });
-        });
-      })
-    );
+  if (
+    !(
+      event.request.url.startsWith("http:") ||
+      event.request.url.startsWith("https:")
+    )
+  ) {
+    return;
   }
+
+  // Skip cross-origin requests, like those for Google Analytics.
+  if (!event.request.url.startsWith(self.location.origin)) return;
+
+  e.respondWith(
+    (async () => {
+      const r = await caches.match(e.request);
+      if (r) return r;
+      const response = await fetch(e.request);
+      const cache = await caches.open(cacheName);
+      cache.put(e.request, response.clone());
+      return response;
+    })()
+  );
 });
