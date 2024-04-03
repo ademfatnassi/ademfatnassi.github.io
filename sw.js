@@ -22,7 +22,7 @@ const PRECACHE_URLS = [
   "index.html",
   "./", // Alias for index.html
   "./assets/css/main.css",
-  "assets/documents/resume.pdf",
+  "./assets/documents/resume.pdf",
   "./assets/js/main.js",
   "./assets/images/profile-image.webp",
   "./assets/images/work-afce.webp",
